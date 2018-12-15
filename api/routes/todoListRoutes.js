@@ -1,10 +1,10 @@
 'use strict';
 
 module.exports = function(app) {
-    let todoList = require('../controllers/todoListController');
-    // userAuth = require('../../auth/AuthController'),
-    // users = require('../admin/controllers/UserController'),
-    // middlewareVerifyToken = require('../../auth/VerifyToken');
+    const todoList = require('../controllers/todoListController'),
+    userAuth = require('../../auth/AuthController'),
+    users = require('../admin/controllers/UserController'),
+    middlewareVerifyToken = require('../../auth/VerifyToken');
 
 
     // todoList Routes
@@ -35,4 +35,5 @@ module.exports = function(app) {
 
     app.route('/admin/users/all')
         .get(users.getUsers);
+
 };

@@ -1,6 +1,6 @@
 'use strict';
 // AuthController.js
-let mongoose = require('mongoose'),
+const mongoose = require('mongoose'),
     User = mongoose.model('User'),
     //require config.js in the root project directory
     config = require('../config');

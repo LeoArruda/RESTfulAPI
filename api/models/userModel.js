@@ -1,7 +1,7 @@
 'use strict';
-const mongoose = require('mongoose');
-const Schema = mongoose.Schema;
-const UserSchema = new Schema({
+let mongoose = require('mongoose');
+let Schema = mongoose.Schema;
+let UserSchema = new Schema({
     name: {
         type: String,
         required: 'Duplicate email address found'

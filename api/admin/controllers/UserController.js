@@ -1,6 +1,6 @@
 'use strict';
 
-let mongoose = require('mongoose'),
+const mongoose = require('mongoose'),
     User = require('../../models/userModel');
 
 exports.getUsers = (req, res) => {
